@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Card from './common/Card';
 import Icon from './common/Icon';
-import { useTranslations } from '../../hooks/useTranslations';
 import { fileToBase64 } from '../lib/utils';
 import { analyzeMedicineImage, summarizeMedicalReport } from '../services/geminiService';
+import { useTranslations } from '@/hooks/useTranslations';
 
 type ScanMode = 'medicine' | 'report';
 
