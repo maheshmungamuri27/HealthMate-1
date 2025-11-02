@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useTranslations } from '../hooks/useTranslations';
+import { useTranslations } from '../../hooks/useTranslations';
 import Card from '../common/Card';
 
 interface PaymentProps {
