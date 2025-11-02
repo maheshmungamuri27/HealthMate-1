@@ -1,8 +1,8 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import type { Hospital } from '../../types';
 import Card from '../common/Card';
-import { useTranslations } from '../../hooks/useTranslations';
-import { useApp } from '../../hooks/useApp';
+import { useTranslations } from '../hooks/useTranslations';
+import { useApp } from '../hooks/useApp';
 import { searchHospitalInformation } from '../../services/geminiService';
 import { hospitalRawData, getUniqueDistricts } from '../../lib/hospitalParser';
 

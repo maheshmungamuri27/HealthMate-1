@@ -1,8 +1,8 @@
 import React from 'react';
 import type { AppointmentDetails } from '../../types';
 import Card from '../common/Card';
-import { useTranslations } from '../../hooks/useTranslations';
-import { useApp } from '../../hooks/useApp';
+import { useTranslations } from '../hooks/useTranslations';
+import { useApp } from '../hooks/useApp';
 
 interface ConfirmationProps {
   details: AppointmentDetails;

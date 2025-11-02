@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Icon from './Icon';
-import { useApp } from '../../hooks/useApp';
-import { useTranslations } from '../../hooks/useTranslations';
+import { useApp } from '../hooks/useApp';
+import { useTranslations } from '../hooks/useTranslations';
 import { processVoiceCommand } from '../../services/geminiService';
 import type { Page, Language } from '../../types';
 

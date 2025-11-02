@@ -1,13 +1,13 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { useTranslations } from '../../hooks/useTranslations';
-import type { Hospital, Medicine, CartItem, MedicineCategory } from '../../types';
+import { useTranslations } from '../hooks/useTranslations';
+import type { Hospital, Medicine, CartItem, MedicineCategory } from '../types';
 import Card from './common/Card';
 import Icon from './common/Icon';
 import { HOSPITALS } from '../constants';
 import { MEDICINES } from '../constants';
-import { useApp } from '../../hooks/useApp';
+import { useApp } from '../hooks/useApp';
 import { placeOrder } from '../services/mockApiService';
-import { getUniqueDistricts } from '../../lib/hospitalParser';
+import { getUniqueDistricts } from '../lib/hospitalParser';
 
 type OrderStep = 'hospital' | 'medicines' | 'delivery' | 'checkout';
 
