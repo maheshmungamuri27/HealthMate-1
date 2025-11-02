@@ -1,0 +1,8 @@
+{
+  "name": "Copy of HealthMate",
+  "description": "HealthMate is your personal AI-powered health companion. It simplifies healthcare through AI-driven report analysis, easy appointment booking, medicine information scanning, and multilingual support, making wellness accessible and personalized for everyone.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

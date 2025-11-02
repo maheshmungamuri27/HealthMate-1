@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthMate - Your AI Health Companion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                DEFAULT: '#1e40af', // medical blue
+                glow: '#2563eb',
+              },
+              secondary: {
+                DEFAULT: '#059669', // healthcare green
+                glow: '#10b981',
+              },
+              accent: {
+                DEFAULT: '#ea580c', // vibrant orange
+              },
+              light: '#f1f5f9', // slate-100
+              medium: '#e2e8f0', // slate-200
+              dark: '#1e293b',   // slate-800
+            },
+            backgroundImage: {
+              'gradient-primary': 'linear-gradient(to right, #1e40af, #2563eb)',
+              'gradient-secondary': 'linear-gradient(to right, #059669, #10b981)',
+              'gradient-accent': 'linear-gradient(to right, #ea580c, #f97316)',
+            },
+             boxShadow: {
+                'glow': '0 0 20px rgba(37, 99, 235, 0.5)',
+            },
+            keyframes: {
+                'pulse-glow': {
+                    '0%, 100%': { boxShadow: '0 0 20px rgba(37, 99, 235, 0.5)' },
+                    '50%': { boxShadow: '0 0 30px rgba(37, 99, 235, 0.8)' },
+                },
+            },
+            animation: {
+                'pulse-glow': 'pulse-glow 3s infinite ease-in-out',
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
+  }
+}
+</script>
+<style>
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="time"],
+  textarea,
+  select {
+    color: black;
+    background-color: white;
+    font-weight: 500;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: #9ca3af;
+    opacity: 1;
+  }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
