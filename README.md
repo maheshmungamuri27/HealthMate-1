@@ -1,20 +1,13 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
-
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/drive/1jMa2Jnd0rNvAvo6Al5dXiCgD20rjAaPF
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+HealthMate is an AI-powered digital healthcare assistant that provides:
+mainly hindi,tel,eng languages
+*login different when via both manual and  voice commands also available 
+*daily health tip dispaly
+*op booking system
+* Symptom analysis using AI
+* scan Medicine & medical report scanning,Dermatology (hair & skin) analysis
+* Healthcare Hub (Blood banks, Schemes, Insurance)
+* Surgery cost comparison by location
+* Smart reminders set then alarm an code was generate then check status enter that code access with adherence tracking
+* Vitals recording & health monitoring
+* Mental wellness support
+* Medicine ordering system
